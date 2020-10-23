@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Parsley</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="card">
+        <div class="container">
+            <form id="demo-form" data-parsley-validate="">
+                <div class="lineForm">
+                    <label for="fullname">Full name:</label>
+                    <input type="text" class="form-control" name="fullname" data-parsley-trigger="change" required="" data-parsley-minlength="2" data-parsley-maxlength="50" data-parsley-pattern="/^[A-Za-zА-Яа-я -]+$/" id="userName"/>
+                </div>
+                <div class="lineForm">
+                    <label for="question">Avatar:</label>
+                    <input type="file" name="f" required="" data-parsley-max-file-size="42" class="choiseFile" id="fileName"/>
+                </div>
+                <div class="lineForm">
+                    <label for="birthday">Birthday:</label>
+                    <input type="text" name="contact-date" id="contact-date" placeholder="DD/MM/YYYY" data-date-format="DD/MM/YYYY" data-date-minDate="01-01-1900" data-parsley-mindate="01-01-1900" required="" data-parsley-pattern_two=""/>
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+                <div class="lineForm">
+                    <label for="contactMethod">Gender:</label>
+                    <span class="gender">
+                        Male:
+                        <input type="radio" name="contactMethod" id="contactMethodMale" value="male" required=""/>
+                        Female:
+                        <input type="radio" name="contactMethod" id="contactMethodFemale" value="female" required=""/>
+                    </span>
+                </div>
+                <div class="lineForm">
+                    <label for="subscribe">Sabscribe:</label>
+                    <input type="checkbox" name="subscribe" id="subscribe" value="ski"/>
+                </div>
+                <div class="lineForm">
+                    <input type="submit" class="btn btn-default inputReg" value="Save"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="result"></div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="parsley.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

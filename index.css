@@ -1,0 +1,141 @@
+body {
+  text-align: center;
+}
+
+input {
+  border-radius: 3px;
+  width: 400px;
+  height: 25px;
+  margin-right: 10px;
+}
+
+label {
+  width: 150px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.lineForm {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.inputReg {
+  width: 558px;
+  height: 35px;
+  font-weight: bolder;
+  font-size: large;
+}
+
+input.parsley-success,
+select.parsley-success,
+textarea.parsley-success {
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  height: 28px;
+}
+
+input.parsley-error,
+select.parsley-error,
+textarea.parsley-error {
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid #eed3d7;
+  height: 28px;
+  width: 400px;
+}
+
+.parsley-errors-list {
+  margin: 2px 0 3px;
+  padding: 0;
+  list-style-type: none;
+  font-size: 0.9em;
+  opacity: 0;
+  color: #b94a48;
+
+  transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+}
+
+.parsley-errors-list.filled {
+  opacity: 1;
+}
+
+li {
+  width: 150px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding: 50px;
+  display: inline-block;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+h2 {
+  margin-top: 50px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 5px;
+  text-align: left;
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contactMethodMale, #contactMethodFemale {
+  width: 100px;
+  
+}
+
+.gender {
+  display: flex;
+  align-items: center;
+}
+
+#subscribe {
+  width: 25px;
+  margin: 0;
+}
+
+#file-upload-button {
+  height: 25px;
+}
+
+#button {
+  height: 100px;
+}
+
+.choiseFile {
+ width: 404px;
+ height: 22px;
+}
+
+.choiseFile.parsley-success,
+.choiseFile.parsley-error {
+  width: 404px;
+  height: 22px;
+}
+
